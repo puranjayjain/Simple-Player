@@ -4,11 +4,13 @@ body {
 video {
   display: flex;
   width: 100%;
-  height: 100%; }
+  height: calc(100% - 80px); }
 
 main {
-  position: fixed !important;
-  bottom: 0;
   margin: 0 !important;
   width: 100%;
+  height: 80px;
   border-radius: 0 !important; }
+
+.smp--right {
+  margin-left: auto !important; }

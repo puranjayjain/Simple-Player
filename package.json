@@ -1,27 +1,27 @@
 {
-  "name": "electron-quick-start",
-  "version": "1.0.0",
-  "description": "A minimal Electron application",
+  "name": "simple-media-player",
+  "version": "0.1.0",
+  "description": "A video and audio player to make the video player cool again",
   "main": "main.js",
   "scripts": {
     "start": "electron main.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/atom/electron-quick-start.git"
+    "url": "git+https://github.com/puranjayjain/Simple-Player.git"
   },
   "keywords": [
     "Electron",
-    "quick",
-    "start",
-    "tutorial"
+    "video",
+    "audio",
+    "player"
   ],
   "author": "GitHub",
-  "license": "CC0-1.0",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/atom/electron-quick-start/issues"
+    "url": "https://github.com/puranjayjain/Simple-Player/issues"
   },
-  "homepage": "https://github.com/atom/electron-quick-start#readme",
+  "homepage": "https://github.com/puranjayjain/Simple-Player#readme",
   "devDependencies": {
     "electron-prebuilt": "^0.36.0",
     "gulp": "^3.9.1",

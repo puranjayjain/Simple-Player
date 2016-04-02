@@ -2,32 +2,64 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Simple Player</title>
+  <title>Simple Media Player</title>
   <link rel="stylesheet" href="css/semantic.css">
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-  <video src="../../Music/Major Lazer -  Too Original (feat. Elliphant & Jovi Rockwell) (Official Music Video).mp4">
-  </video>
+  <audio></audio>
+  <video src="../../Music/Major Lazer -  Too Original (feat. Elliphant & Jovi Rockwell) (Official Music Video).mp4"></video>
   <main class="ui inverted segment">
-    <div class="ui tiny blue inverted top progress">
+    <div class="ui tiny inverted top progress">
       <div class="bar"></div>
     </div>
-    <div class="ui slider">
-  <div class="handle"></div>
-  <div class="value"></div>
-</div>
-    <button id="play" class="ui blue button inverted ">
-      <i class="play icon"></i>
-      <span>Play</span>
-    </button>
-    <button class="ui button inverted">
-      <i class="shuffle icon"></i>
-      Shuffle
-    </button>
+    <div class="ui grid">
+      <div class="ui icon buttons compact">
+        <button id="play" class="ui blue button compact activating" data-content="Play the media">
+          <i class="play icon"></i>
+        </button>
+      </div>
+      <div class="ui icon buttons compact">
+        <button id="previous" class="ui button compact activating" data-content="Play the previous the media from the playlist">
+          <i class="fast backward icon"></i>
+        </button>
+        <button id="stop" class="ui red button compact activating" data-content="Stop the media">
+          <i class="stop icon"></i>
+        </button>
+        <button id="next" class="ui button compact activating" data-content="Play the next the media from the playlist">
+          <i class="fast forward icon"></i>
+        </button>
+      </div>
+      <div class="ui icon buttons compact">
+        <button id="looping" class="ui orange button compact activating" data-content="Switch between looping mode">
+          <i class="repeat icon"></i>
+        </button>
+        <button id="random" class="ui button compact activating" data-content="Shuffle and play a random media">
+          <i class="random icon"></i>
+        </button>
+      </div>
+      <div class="ui buttons compact">
+        <button id="playlist" class="ui button compact activating" data-content="Toggles playlist view">
+          <i class="list icon"></i>
+          Playlist
+        </button>
+      </div>
+      <div class="ui icon buttons compact smp--right">
+        <button id="volume" class="ui icon labeled purple button compact activating" data-content="Toggle audio modes">
+          <i class="volume up icon"></i>
+          <div>100%</div>
+        </button>
+      </div>
+      <div class="ui icon buttons compact">
+        <button id="fullscreen" class="ui violet button compact activating" data-content="Toggle fullscreen mode">
+          <i class="maximize icon"></i>
+        </button>
+      </div>
+    </div>
   </main>
   <script>window.$ = window.jQuery = require('./js/jquery.min.js');</script>
   <script src="js/semantic.min.js"></script>
-  <script src="js/main.js"></script>
+  <script src="js/playerState.js"></script>
+  <script src="js/player.js"></script>
 </body>
 </html>
