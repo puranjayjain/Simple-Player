@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Simple Player</title>
+  <link rel="stylesheet" href="css/semantic.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <video src="../../Music/Major Lazer -  Too Original (feat. Elliphant & Jovi Rockwell) (Official Music Video).mp4">
+  </video>
+  <main class="ui inverted segment">
+    <div class="ui tiny blue inverted top progress">
+      <div class="bar"></div>
+    </div>
+    <div class="ui slider">
+  <div class="handle"></div>
+  <div class="value"></div>
+</div>
+    <button id="play" class="ui blue button inverted ">
+      <i class="play icon"></i>
+      <span>Play</span>
+    </button>
+    <button class="ui button inverted">
+      <i class="shuffle icon"></i>
+      Shuffle
+    </button>
+  </main>
+  <script>window.$ = window.jQuery = require('./js/jquery.min.js');</script>
+  <script src="js/semantic.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
