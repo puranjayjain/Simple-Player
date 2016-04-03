@@ -17,6 +17,30 @@ main {
   border-radius: 0 !important;
 }
 
+// smp contain the progress bar inside the control
+.smp--container {
+  position: relative;
+  width: 4rem;
+}
+
+.smp--container .ui.progress {
+  margin: 0;
+}
+
+.smp--container .ui.progress .bar {
+  height: 2.178571428571429rem;
+  min-width: 0;
+}
+
+.smp--container .ui.progress:after {
+  content: attr(data-percent) '%';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-weight: bold;
+}
+
 // right aligned in a flex
 .smp--right {
   margin-left: auto !important;

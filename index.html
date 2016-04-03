@@ -45,10 +45,16 @@
         </button>
       </div>
       <div class="ui icon buttons compact smp--right">
-        <button id="volume" class="ui icon labeled purple button compact activating" data-content="Toggle audio modes">
+        <button id="volume" class="ui icon purple button compact activating" data-content="Toggle audio modes">
           <i class="volume up icon"></i>
-          <div>100%</div>
         </button>
+        <div class="smp--container">
+          <div class="ui purple inverted progress" data-percent="22">
+            <div class="bar" style="transition-duration: 300ms; width: 22%;">
+              <div class="progress"></div>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="ui icon buttons compact">
         <button id="fullscreen" class="ui violet button compact activating" data-content="Toggle fullscreen mode">
