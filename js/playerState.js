@@ -2,5 +2,6 @@
 
 // store the players current details
 let playerState = {
-  playing: false
+  playing: false,
+  mode: 'video'
 }
