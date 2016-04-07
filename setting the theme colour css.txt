@@ -1,0 +1,17 @@
+//in css
+:root {
+  --awesome-color: #A5ECFA;
+}
+
+body {
+  background-color: var(--awesome-color);
+}
+The variable value can be retrieved and changed directly in JavaScript:
+
+//in js 
+
+// Get the variable value ' #A5ECFA'
+let color = window.getComputedStyle(document.body).getPropertyValue('--awesome-color')
+
+// Set the variable value to 'orange'
+document.body.style.setProperty('--awesome-color', 'orange')
