@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/puranjayjain/Simple-Player#readme",
   "devDependencies": {
-    "electron-prebuilt": "^1.4.8",
+    "electron-prebuilt": "^1.4.13",
     "gulp": "^3.9.1",
     "gulp-plumber": "^1.1.0",
     "gulp-sass": "^3.0.0"
